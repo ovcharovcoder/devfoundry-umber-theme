@@ -1,0 +1,40 @@
+{
+  "name": "devfoundry-umber",
+  "displayName": "DevFoundry Umber",
+  "description": "A warm dark theme with amber accents and earthy tones, designed for comfortable extended coding sessions at night.",
+  "version": "1.0.0",
+  "publisher": "ovcharovcoder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ovcharovcoder/devfoundry-umber.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "warm dark",
+    "amber",
+    "earth tones",
+    "umber",
+    "cozy",
+    "minimal",
+    "professional",
+    "warm"
+  ],
+  "icon": "icon.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "DevFoundry Umber",
+        "uiTheme": "vs-dark",
+        "path": "./themes/devfoundry-umber-color-theme.json"
+      }
+    ]
+  }
+}
