@@ -38,7 +38,11 @@ Open an issue or pull request on [GitHub](https://github.com/ovcharovcoder/devfo
 
 ## 👤 Author
 
-<img src="https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-them/main/images/avatar.png" alt="Andriy Ovcharov" width="60px">
+<img 
+  src="https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-theme/main/images/avatar.png"
+  alt="Andriy Ovcharov"
+  width="60"
+/>
 
 Andriy Ovcharov  
 📧 ovcharovcoder@gmail.com
@@ -55,3 +59,4 @@ If you enjoy DevFoundry Umber, consider supporting the author:
 ## 🪪 License
 
 Released under the [MIT License](https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-them/main/LICENSE)
+
