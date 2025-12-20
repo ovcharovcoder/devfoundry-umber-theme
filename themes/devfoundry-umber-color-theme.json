@@ -1,0 +1,154 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "DevFoundry Umber",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1E1A16",
+    "editor.foreground": "#E8DCCB",
+    "editorLineNumber.foreground": "#6E665C",
+    "editorLineNumber.activeForeground": "#C9B89A",
+    "editorCursor.foreground": "#D19A66",
+    "editor.selectionBackground": "#3A2E2240",
+    "editor.inactiveSelectionBackground": "#3A2E2220",
+    "editor.lineHighlightBackground": "#2A241D",
+    "editor.lineHighlightBorder": "#3D3226",
+    "editorBracketMatch.background": "#3D3226",
+    "editorBracketMatch.border": "#D19A66",
+    "editorWhitespace.foreground": "#3A332B",
+
+    "editorError.foreground": "#E06C75",
+    "editorError.background": "#BE504630",
+    "editorWarning.foreground": "#D19A66",
+    "editorWarning.background": "#D19A6630",
+    "editorInfo.foreground": "#61AEEF",
+    "editorHint.foreground": "#56B6C2",
+
+    "editor.findMatchBackground": "#D19A6640",
+    "editor.findMatchHighlightBackground": "#D19A6620",
+
+    "activityBar.background": "#18130F",
+    "activityBar.foreground": "#C9B89A",
+    "sideBar.background": "#1E1A16",
+    "sideBar.foreground": "#BEB2A2",
+    "statusBar.background": "#18130F",
+    "statusBar.foreground": "#BEB2A2",
+    "tab.activeBackground": "#262019",
+    "tab.activeForeground": "#F2E8D8",
+    "tab.inactiveBackground": "#18130F",
+    "tab.inactiveForeground": "#8E8478",
+    "terminal.background": "#1E1A16",
+    "terminal.foreground": "#E8DCCB",
+    "titleBar.activeBackground": "#18130F",
+    "titleBar.activeForeground": "#C9B89A",
+    "focusBorder": "#D19A6640",
+    "list.activeSelectionBackground": "#3A2E22",
+    "list.hoverBackground": "#2A241D",
+
+    "gitDecoration.addedResourceForeground": "#98C379",
+    "gitDecoration.modifiedResourceForeground": "#D19A66",
+    "gitDecoration.deletedResourceForeground": "#E06C75",
+    "gitDecoration.untrackedResourceForeground": "#56B6C2",
+    "gitDecoration.ignoredResourceForeground": "#6E665C"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#7A7267"
+      }
+    },
+    {
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier",
+        "keyword.control"
+      ],
+      "settings": {
+        "foreground": "#D19A66"
+      }
+    },
+    {
+      "scope": [
+        "variable",
+        "meta.definition.variable",
+        "variable.other.readwrite"
+      ],
+      "settings": {
+        "foreground": "#E8DCCB"
+      }
+    },
+    {
+      "scope": ["string", "constant.other.symbol", "string.quoted"],
+      "settings": {
+        "foreground": "#98C379"
+      }
+    },
+    {
+      "scope": ["number", "constant.numeric"],
+      "settings": {
+        "foreground": "#C678DD"
+      }
+    },
+    {
+      "scope": [
+        "function",
+        "entity.name.function",
+        "support.function",
+        "meta.function-call"
+      ],
+      "settings": {
+        "foreground": "#61AEEF"
+      }
+    },
+    {
+      "scope": [
+        "entity.name.class",
+        "support.class",
+        "meta.class",
+        "entity.name.type"
+      ],
+      "settings": {
+        "foreground": "#E5C07B"
+      }
+    },
+    {
+      "scope": ["constant.language", "variable.language", "support.constant"],
+      "settings": {
+        "foreground": "#D19A66"
+      }
+    },
+    {
+      "scope": [
+        "meta.tag",
+        "entity.name.tag",
+        "entity.name.tag.jsx",
+        "entity.name.tag.tsx"
+      ],
+      "settings": {
+        "foreground": "#E06C75"
+      }
+    },
+    {
+      "scope": ["entity.other.attribute-name", "meta.attribute"],
+      "settings": {
+        "foreground": "#56B6C2"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.tag",
+        "punctuation.separator.key-value"
+      ],
+      "settings": {
+        "foreground": "#A69A8A"
+      }
+    },
+    {
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": {
+        "foreground": "#E06C75"
+      }
+    }
+  ]
+}
