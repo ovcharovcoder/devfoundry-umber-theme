@@ -1,29 +1,12 @@
 # Changelog
-
-All notable changes to the Avif Preview VS Code extension will be documented in this file.
-<br>
-
-## [1.0.1] - 2025-12-23
-
-### Changed
-
-* Switched to an implementation using a separate Webview panel opened via a command from the context menu (instead of a custom editor).
-* Improved stability of AVIF image preview by avoiding conflicts with the built-in VS Code mechanism.
-* Added automatic image refresh when the file changes (using FileSystemWatcher + cache-busting).
-* Enhanced loading diagnostics (onload/onerror status indicators).
-
-### Fixed
-
-Resolved issues with displaying certain AVIF files that occurred in the previous custom editor-based implementation.
+All notable changes to the DevFoundry Umber VS Code extension will be documented in this file. The format is based on Keep a Changelog, and this project adheres to Semantic Versioning.
 
 
-## [1.0.0] - 2025-12-22
+## [1.0.0] - 2025-12-20
 ### Added
 
-* Initial release of the Avif Preview extension.
-* Preview of AVIF images in a dedicated panel with support for zooming (mouse wheel and click) and panning.
-* Adaptation to the VS Code theme (background and fonts).
-* Secure rendering using Webview and Content-Security-Policy.
-* Context menu entry in Explorer for *.avif files ("Open AVIF Preview").
-
-
+* Initial release of DevFoundry Umber — a warm dark theme featuring amber accents and earthy tones for comfortable extended coding sessions.
+* Comprehensive syntax highlighting optimized for JavaScript/TypeScript, React (JSX/TSX), HTML, CSS/SCSS/SASS, Python, PHP, Java, C/C++, Ruby, JSON, YAML, Markdown, and other popular languages.
+* Harmonious UI styling across editor, sidebar, activity bar, tabs, status bar, and terminal.
+* Accessibility-compliant contrast ratios and subtle translucent selections.
+* Built-in support for error/warning indicators and Git decorations.
