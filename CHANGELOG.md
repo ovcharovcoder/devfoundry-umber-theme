@@ -17,7 +17,7 @@ All notable changes to the Avif Preview VS Code extension will be documented in 
 Resolved issues with displaying certain AVIF files that occurred in the previous custom editor-based implementation.
 
 
-## [1.0.0] - 2025-12-20
+## [1.0.0] - 2025-12-22
 ### Added
 
 * Initial release of the Avif Preview extension.
