@@ -58,5 +58,6 @@ If you enjoy DevFoundry Umber, consider supporting the author:
 
 ## 🪪 License
 
-Released under the [MIT License](https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-them/main/LICENSE)
+Released under the [MIT License](https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-theme/main/LICENSE.md)
+
 
