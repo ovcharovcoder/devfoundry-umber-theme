@@ -6,26 +6,23 @@
     "editor.background": "#1E1A16",
     "editor.foreground": "#E8DCCB",
     "editorLineNumber.foreground": "#6E665C",
-    "editorLineNumber.activeForeground": "#C9B89A",
+    "editorLineNumber.activeForeground": "#D4C4A8",
     "editorCursor.foreground": "#D19A66",
-    "editor.selectionBackground": "#3A2E2240",
-    "editor.inactiveSelectionBackground": "#3A2E2220",
-    "editor.lineHighlightBackground": "#2A241D",
-    "editor.lineHighlightBorder": "#3D3226",
+    "editor.selectionBackground": "#3B3024",
+    "editor.inactiveSelectionBackground": "#3B302488",
+    "editor.selectionHighlightBackground": "#4A3A2A88",
+    "editor.lineHighlightBackground": "#231D17",
     "editorBracketMatch.background": "#3D3226",
     "editorBracketMatch.border": "#D19A66",
     "editorWhitespace.foreground": "#3A332B",
-
     "editorError.foreground": "#E06C75",
-    "editorError.background": "#BE504630",
+    "editorError.background": "#BE504650",
     "editorWarning.foreground": "#D19A66",
-    "editorWarning.background": "#D19A6630",
+    "editorWarning.background": "#D19A6640",
     "editorInfo.foreground": "#61AEEF",
     "editorHint.foreground": "#56B6C2",
-
-    "editor.findMatchBackground": "#D19A6640",
-    "editor.findMatchHighlightBackground": "#D19A6620",
-
+    "editor.findMatchBackground": "#D19A6688",
+    "editor.findMatchHighlightBackground": "#D19A6633",
     "activityBar.background": "#18130F",
     "activityBar.foreground": "#C9B89A",
     "sideBar.background": "#1E1A16",
@@ -40,10 +37,9 @@
     "terminal.foreground": "#E8DCCB",
     "titleBar.activeBackground": "#18130F",
     "titleBar.activeForeground": "#C9B89A",
-    "focusBorder": "#D19A6640",
-    "list.activeSelectionBackground": "#3A2E22",
+    "focusBorder": "#D19A6680",
+    "list.activeSelectionBackground": "#3B3024",
     "list.hoverBackground": "#2A241D",
-
     "gitDecoration.addedResourceForeground": "#98C379",
     "gitDecoration.modifiedResourceForeground": "#D19A66",
     "gitDecoration.deletedResourceForeground": "#E06C75",
@@ -54,7 +50,7 @@
     {
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#7A7267"
+        "foreground": "#8B8175"
       }
     },
     {
@@ -75,13 +71,13 @@
         "variable.other.readwrite"
       ],
       "settings": {
-        "foreground": "#E8DCCB"
+        "foreground": "#EDE3D3"
       }
     },
     {
       "scope": ["string", "constant.other.symbol", "string.quoted"],
       "settings": {
-        "foreground": "#98C379"
+        "foreground": "#9EC77B"
       }
     },
     {
@@ -98,7 +94,7 @@
         "meta.function-call"
       ],
       "settings": {
-        "foreground": "#61AEEF"
+        "foreground": "#6FAED9"
       }
     },
     {
