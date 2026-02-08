@@ -2,6 +2,7 @@
   "$schema": "vscode://schemas/color-theme",
   "name": "DevFoundry Umber",
   "type": "dark",
+
   "colors": {
     "editor.background": "#1E1A16",
     "editor.foreground": "#E8DCCB",
@@ -12,9 +13,18 @@
     "editor.inactiveSelectionBackground": "#3B302488",
     "editor.selectionHighlightBackground": "#4A3A2A88",
     "editor.lineHighlightBackground": "#231D17",
+    "editor.lineHighlightBorder": "#3D3226",
     "editorBracketMatch.background": "#3D3226",
     "editorBracketMatch.border": "#D19A66",
     "editorWhitespace.foreground": "#3A332B",
+    "editorIndentGuide.background1": "#2A241D",
+    "editorIndentGuide.background2": "#2A241D",
+    "editorIndentGuide.background3": "#2A241D",
+    "editorIndentGuide.background4": "#2A241D",
+    "editorIndentGuide.activeBackground1": "#3D3226",
+    "editorIndentGuide.activeBackground2": "#3D3226",
+    "editorIndentGuide.activeBackground3": "#3D3226",
+    "editorIndentGuide.activeBackground4": "#3D3226",
     "editorError.foreground": "#E06C75",
     "editorError.background": "#BE504650",
     "editorWarning.foreground": "#D19A66",
@@ -23,6 +33,13 @@
     "editorHint.foreground": "#56B6C2",
     "editor.findMatchBackground": "#D19A6688",
     "editor.findMatchHighlightBackground": "#D19A6633",
+    "editorHoverWidget.background": "#262019",
+    "editorHoverWidget.border": "#3D3226",
+    "editorSuggestWidget.background": "#262019",
+    "editorSuggestWidget.border": "#3D3226",
+    "editorSuggestWidget.selectedBackground": "#3B3024",
+    "editorWidget.background": "#262019",
+    "editorWidget.border": "#3D3226",
     "activityBar.background": "#18130F",
     "activityBar.foreground": "#C9B89A",
     "sideBar.background": "#1E1A16",
@@ -33,6 +50,7 @@
     "tab.activeForeground": "#F2E8D8",
     "tab.inactiveBackground": "#18130F",
     "tab.inactiveForeground": "#8E8478",
+    "tab.border": "#18130F",
     "terminal.background": "#1E1A16",
     "terminal.foreground": "#E8DCCB",
     "titleBar.activeBackground": "#18130F",
@@ -40,12 +58,16 @@
     "focusBorder": "#D19A6680",
     "list.activeSelectionBackground": "#3B3024",
     "list.hoverBackground": "#2A241D",
+    "scrollbarSlider.background": "#3D322680",
+    "scrollbarSlider.hoverBackground": "#3D3226",
+    "scrollbarSlider.activeBackground": "#4A3A2A",
     "gitDecoration.addedResourceForeground": "#98C379",
     "gitDecoration.modifiedResourceForeground": "#D19A66",
     "gitDecoration.deletedResourceForeground": "#E06C75",
     "gitDecoration.untrackedResourceForeground": "#56B6C2",
     "gitDecoration.ignoredResourceForeground": "#6E665C"
   },
+
   "tokenColors": [
     {
       "scope": ["comment", "punctuation.definition.comment"],
@@ -53,6 +75,7 @@
         "foreground": "#8B8175"
       }
     },
+
     {
       "scope": [
         "keyword",
@@ -64,6 +87,7 @@
         "foreground": "#D19A66"
       }
     },
+
     {
       "scope": [
         "variable",
@@ -74,18 +98,21 @@
         "foreground": "#EDE3D3"
       }
     },
+
     {
       "scope": ["string", "constant.other.symbol", "string.quoted"],
       "settings": {
         "foreground": "#9EC77B"
       }
     },
+
     {
       "scope": ["number", "constant.numeric"],
       "settings": {
         "foreground": "#C678DD"
       }
     },
+
     {
       "scope": [
         "function",
@@ -97,6 +124,7 @@
         "foreground": "#6FAED9"
       }
     },
+
     {
       "scope": [
         "entity.name.class",
@@ -108,12 +136,14 @@
         "foreground": "#E5C07B"
       }
     },
+
     {
       "scope": ["constant.language", "variable.language", "support.constant"],
       "settings": {
         "foreground": "#D19A66"
       }
     },
+
     {
       "scope": [
         "meta.tag",
@@ -125,12 +155,14 @@
         "foreground": "#E06C75"
       }
     },
+
     {
       "scope": ["entity.other.attribute-name", "meta.attribute"],
       "settings": {
         "foreground": "#56B6C2"
       }
     },
+
     {
       "scope": [
         "punctuation.definition.tag",
@@ -140,6 +172,7 @@
         "foreground": "#A69A8A"
       }
     },
+
     {
       "scope": ["invalid", "invalid.illegal"],
       "settings": {
