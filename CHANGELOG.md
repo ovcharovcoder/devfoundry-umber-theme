@@ -30,3 +30,33 @@ All notable changes to the DevFoundry Umber VS Code extension will be documented
 * Extended UI coverage for hover widgets, suggestion widgets, and editor widgets.
 * Improved tab and focus visual feedback.
 * Better visual harmony between editor surface and surrounding VS Code UI panels.
+
+## [1.0.4] - 2026-02-10
+### Enhanced
+* Complete color palette refinement for optimal eye comfort and reduced visual fatigue during extended coding sessions.
+* Extended language support covering modern web development stack: Vue.js, Tailwind CSS, GraphQL, Docker Compose, and API development.
+* Improved syntax highlighting granularity with specialized tokenization for TypeScript decorators, React Hooks, and Vue.js directives.
+* Enhanced UI component styling including notifications, sticky scroll, marker navigation, and diff editor visual improvements.
+* Advanced bracket pair guidance with multi-level coloring for better code navigation in complex nested structures.
+* Optimized terminal color scheme with full ANSI color support matching the theme's visual language.
+
+###  Fixed
+* Resolved JSON color inconsistency – restored distinct color differentiation between keys and values for better data structure visualization.
+* Corrected tab highlight colors – unified active tab border to maintain theme's amber-based visual identity.
+* Adjusted editor selection transparency – fine-tuned opacity levels for more comfortable text highlighting.
+* Fixed validation errors by replacing deprecated editorLink.foreground with correct textLink.foreground property.
+* Removed unsupported token background – resolved VS Code compatibility warnings in Markdown code block definitions.
+
+### Added
+* Comprehensive notifications system – fully styled notification panels, toasts, and icons with theme-consistent colors.
+* Advanced Git integration – specialized highlighting for commit messages, diff headers, and merge conflicts.
+* Testing framework support – dedicated syntax highlighting for test cases, assertions, and testing utilities.
+* Shell/Terminal command highlighting – improved readability for command-line operations and arguments.
+* HTTP/API development enhancements – specialized colors for HTTP methods, status codes, and API documentation.
+* Code navigation improvements – added editor link colors, marker navigation backgrounds, and sticky scroll support.
+
+### Technical
+* Maintained Chrome DevTools inspiration while enhancing visual comfort and reducing eye strain.
+* Preserved semantic token coloring consistency across all supported programming languages.
+* Optimized transparency values throughout the theme for better UI layer separation.
+* Expanded documentation coverage with proper changelog formatting and version tracking.
