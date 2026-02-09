@@ -2,7 +2,7 @@
   "name": "devfoundry-umber",
   "displayName": "DevFoundry Umber",
   "description": "A warm dark theme with amber accents and earthy tones, designed for comfortable extended coding sessions at night.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "ovcharovcoder",
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     ]
   }
 }
+
 
 
 
