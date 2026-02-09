@@ -31,7 +31,7 @@ All notable changes to the DevFoundry Umber VS Code extension will be documented
 * Improved tab and focus visual feedback.
 * Better visual harmony between editor surface and surrounding VS Code UI panels.
 
-## [1.0.4] - 2026-02-10
+## [1.0.4] - 2026-02-09
 ### Enhanced
 * Complete color palette refinement for optimal eye comfort and reduced visual fatigue during extended coding sessions.
 * Extended language support covering modern web development stack: Vue.js, Tailwind CSS, GraphQL, Docker Compose, and API development.
