@@ -60,3 +60,21 @@ All notable changes to the DevFoundry Umber VS Code extension will be documented
 * Preserved semantic token coloring consistency across all supported programming languages.
 * Optimized transparency values throughout the theme for better UI layer separation.
 * Expanded documentation coverage with proper changelog formatting and version tracking.
+  
+## [1.0.5] - 2026-02-10
+
+### Added
+* Extended semantic token coverage for parameters, readonly parameters, self parameters, and default library symbols.
+* Inlay hints styling for improved readability of inline type and parameter hints.
+* Extended JSON key highlighting support for object literal structures.
+* Inline diff syntax coloring for inserted and removed text in code comparisons.
+* Notebook UI token support for consistent styling inside notebook editors.
+
+### Improved
+* Enhanced visual consistency between semantic tokens and TextMate scopes.
+* Better support for modern TypeScript / JavaScript language features.
+* Improved color mapping for built-in library functions and methods.
+* More consistent diff and merge visual feedback across editor UI.
+
+### Fixed
+* Reduced potential scope conflicts in extended token coverage areas.
