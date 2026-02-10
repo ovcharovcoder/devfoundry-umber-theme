@@ -154,7 +154,15 @@
     "panel.background": "#1E1A16",
     "panel.border": "#3D3226",
     "panelTitle.activeBorder": "#FFB86E",
-    "panelTitle.activeForeground": "#FFB86E"
+    "panelTitle.activeForeground": "#FFB86E",
+    "editorInlayHint.foreground": "#8B8175",
+    "editorInlayHint.background": "#3D322644",
+    "editorInlayHint.typeForeground": "#61AFEF",
+    "editorInlayHint.parameterForeground": "#98C379",
+    "notebook.cellBorderColor": "#3D3226",
+    "notebook.focusedCellBorder": "#FFB86E44",
+    "notebookStatusSuccessIcon.foreground": "#98C379",
+    "notebookStatusErrorIcon.foreground": "#E06C75"
   },
   "tokenColors": [
     {
@@ -669,6 +677,28 @@
         "constant.language.null.json"
       ],
       "settings": { "foreground": "#FFB454" }
+    },
+
+    /* EXTENSIONS */
+    {
+      "name": "JSON Object Keys Extended",
+      "scope": ["meta.object-literal.key.json"],
+      "settings": { "foreground": "#E06C75" }
+    },
+    {
+      "name": "Inlay Hints",
+      "scope": ["meta.inlay-hint"],
+      "settings": { "foreground": "#8B8175" }
+    },
+    {
+      "name": "Diff Inline Insert",
+      "scope": ["markup.inserted.diff"],
+      "settings": { "foreground": "#98C379" }
+    },
+    {
+      "name": "Diff Inline Remove",
+      "scope": ["markup.deleted.diff"],
+      "settings": { "foreground": "#E06C75" }
     }
   ],
   "semanticTokenColors": {
@@ -697,6 +727,15 @@
     "event": "#E06C75",
     "label": "#E8DCCB",
     "macro": "#FFB86E",
-    "pseudo": "#56B6C2"
+    "pseudo": "#56B6C2",
+
+    /* ADDED SAFE SEMANTIC TOKENS */
+    "parameter": "#E8DCCB",
+    "parameter.readonly": "#FFB86E",
+    "selfParameter": "#D19A66",
+    "property.static": "#98C379",
+    "variable.defaultLibrary": "#61AFEF",
+    "function.defaultLibrary": "#61AFEF",
+    "method.defaultLibrary": "#61AFEF"
   }
 }
