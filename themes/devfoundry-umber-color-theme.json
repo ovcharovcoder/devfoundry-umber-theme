@@ -5,10 +5,10 @@
   "semanticHighlighting": true,
   "colors": {
     "focusBorder": "#FFB86E44",
-    "editor.background": "#1E1A16",
+    "editor.background": "#1B1713",
     "editor.foreground": "#E8DCCB",
     "editorCursor.foreground": "#5C9EFF",
-    "editor.lineHighlightBackground": "#2A241D",
+    "editor.lineHighlightBackground": "#272019",
     "editor.lineHighlightBorder": "#3D3226",
     "editor.selectionBackground": "#FFB86E22",
     "editor.inactiveSelectionBackground": "#FFB86E11",
