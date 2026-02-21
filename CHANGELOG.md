@@ -78,3 +78,9 @@ All notable changes to the DevFoundry Umber VS Code extension will be documented
 
 ### Fixed
 * Reduced potential scope conflicts in extended token coverage areas.
+
+## [1.0.6] - 2026-02-21
+
+### Fixed
+This version has refined the color system, improving contrast, strengthening visual hierarchy, and adding depth to the interface. The theme has become more balanced, focused, and noticeably more premium in everyday use.
+
