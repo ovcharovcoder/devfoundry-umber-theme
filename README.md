@@ -41,10 +41,10 @@ Open an issue or pull request on [GitHub](https://github.com/ovcharovcoder/devfo
 <img 
   src="https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-theme/main/images/avatar.png"
   alt="Andriy Ovcharov"
-  width="80"
+  width="60"
 />
 
-Andriy Ovcharov  
+Andriy Ovcharov<br>  
 📧 ovcharovcoder@gmail.com
 
 ---
