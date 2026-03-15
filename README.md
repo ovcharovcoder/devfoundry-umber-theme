@@ -41,7 +41,7 @@ Open an issue or pull request on [GitHub](https://github.com/ovcharovcoder/devfo
 <img 
   src="https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-theme/main/images/avatar.png"
   alt="Andriy Ovcharov"
-  width="60"
+  width="80"
 />
 
 Andriy Ovcharov  
