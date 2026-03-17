@@ -300,7 +300,7 @@
     },
     {
       "name": "HTML Tags",
-      "scope": ["entity.name.tag.css", "entity.name.tag"],
+      "scope": ["entity.name.tag"],
       "settings": { "foreground": "#E06C75" }
     },
     {
@@ -332,8 +332,13 @@
     },
     {
       "name": "CSS Properties",
-      "scope": ["support.type.property-name.css"],
-      "settings": { "foreground": "#9EC77B" }
+      "scope": [
+        "support.type.property-name.css",
+        "meta.property-name.css",
+        "source.css meta.property-name",
+        "source.css support.type.property-name"
+      ],
+      "settings": { "foreground": "#EDE3D3" }
     },
     {
       "name": "CSS Property Values",
@@ -341,22 +346,36 @@
         "support.constant.property-value.css",
         "constant.other.color.css",
         "support.constant.vendor-property-value.css",
-        "keyword.other.unit.css",
-        "support.type.property-name.css"
+        "meta.property-value.css",
+        "source.css meta.property-value"
       ],
       "settings": { "foreground": "#FFB454" }
     },
     {
-      "name": "CSS Values",
+      "name": "CSS Numeric Values",
       "scope": [
-        "support.constant.property-value.css",
-        "keyword.other.unit.css"
+        "constant.numeric.css",
+        "meta.property-value.css constant.numeric",
+        "source.css constant.numeric"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "CSS Units",
+      "scope": [
+        "keyword.other.unit.css",
+        "keyword.other.unit",
+        "meta.property-value.css keyword.other.unit"
       ],
       "settings": { "foreground": "#FFB86E" }
     },
     {
       "name": "CSS Functions",
-      "scope": ["support.function.css"],
+      "scope": [
+        "support.function.css",
+        "meta.function.css",
+        "support.function.calc.css"
+      ],
       "settings": { "foreground": "#61AFEF" }
     },
     {
@@ -407,58 +426,376 @@
       }
     },
 
-    /* JS / TS */
+    /* ========== JavaScript/TypeScript ========== */
+    /* Основні ключові слова */
     {
-      "name": "JS Async/Await",
-      "scope": ["keyword.control.async.ts", "keyword.control.await.ts"],
+      "name": "JS Control Keywords",
+      "scope": [
+        "keyword.control.js",
+        "keyword.control.ts",
+        "keyword.control.flow.js",
+        "keyword.control.flow.ts"
+      ],
       "settings": { "foreground": "#FFB86E", "fontStyle": "bold" }
     },
     {
-      "name": "JS Decorators",
-      "scope": ["meta.decorator.ts", "meta.decorator.js"],
-      "settings": { "foreground": "#FFB86E" }
-    },
-    {
-      "name": "JS Generics/Types",
+      "name": "JS Async/Await",
       "scope": [
-        "storage.type.ts",
-        "storage.type.js",
-        "entity.name.type.ts",
-        "entity.name.type.js"
+        "keyword.control.async.js",
+        "keyword.control.async.ts",
+        "keyword.control.await.js",
+        "keyword.control.await.ts"
       ],
-      "settings": { "foreground": "#9EC77B" }
+      "settings": { "foreground": "#FFB86E", "fontStyle": "bold italic" }
     },
     {
-      "name": "JSX/TSX Tags",
-      "scope": ["entity.name.tag.jsx", "entity.name.tag.tsx"],
-      "settings": {
-        "foreground": "#61AFEF"
-      }
+      "name": "JS Declaration Keywords",
+      "scope": [
+        "storage.type.js",
+        "storage.type.ts",
+        "storage.type.function.js",
+        "storage.type.function.ts",
+        "storage.type.class.js",
+        "storage.type.class.ts"
+      ],
+      "settings": { "foreground": "#C678DD", "fontStyle": "bold" }
     },
     {
-      "name": "JSX Props",
-      "scope": ["variable.parameter.jsx", "variable.parameter.tsx"],
+      "name": "JS Modifiers",
+      "scope": [
+        "storage.modifier.js",
+        "storage.modifier.ts",
+        "storage.modifier.static.js",
+        "storage.modifier.static.ts",
+        "storage.modifier.private.js",
+        "storage.modifier.private.ts",
+        "storage.modifier.public.js",
+        "storage.modifier.public.ts",
+        "storage.modifier.protected.js",
+        "storage.modifier.protected.ts",
+        "storage.modifier.abstract.js",
+        "storage.modifier.abstract.ts"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+
+    /* Функції */
+    {
+      "name": "JS Function Definitions",
+      "scope": [
+        "entity.name.function.js",
+        "entity.name.function.ts",
+        "meta.function.js entity.name.function",
+        "meta.function.ts entity.name.function"
+      ],
+      "settings": { "foreground": "#61AFEF", "fontStyle": "bold" }
+    },
+    {
+      "name": "JS Method Definitions",
+      "scope": [
+        "entity.name.method.js",
+        "entity.name.method.ts",
+        "meta.method.js entity.name.function",
+        "meta.method.ts entity.name.function"
+      ],
+      "settings": { "foreground": "#61AFEF", "fontStyle": "bold" }
+    },
+    {
+      "name": "JS Function Calls",
+      "scope": [
+        "meta.function-call.js",
+        "meta.function-call.ts",
+        "support.function.js",
+        "support.function.ts"
+      ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "JS Function Parameters",
+      "scope": [
+        "variable.parameter.js",
+        "variable.parameter.ts",
+        "meta.parameters.js variable.parameter",
+        "meta.parameters.ts variable.parameter"
+      ],
+      "settings": { "foreground": "#D19A66", "fontStyle": "italic" }
+    },
+
+    /* Змінні */
+    {
+      "name": "JS Variables",
+      "scope": [
+        "variable.other.readwrite.js",
+        "variable.other.readwrite.ts",
+        "variable.other.object.js",
+        "variable.other.object.ts"
+      ],
       "settings": { "foreground": "#EDE3D3" }
     },
     {
-      "name": "JSX Components",
-      "scope": ["entity.name.tag.jsx", "entity.name.tag.tsx"],
-      "settings": { "foreground": "#6FAED9" }
+      "name": "JS Constant Variables",
+      "scope": [
+        "variable.other.constant.js",
+        "variable.other.constant.ts",
+        "variable.other.readwrite.const.js",
+        "variable.other.readwrite.const.ts"
+      ],
+      "settings": { "foreground": "#D19A66", "fontStyle": "bold" }
     },
     {
-      "name": "Console and Logging",
-      "scope": ["support.type.console", "entity.name.type.console"],
+      "name": "JS Object Properties",
+      "scope": [
+        "variable.other.property.js",
+        "variable.other.property.ts",
+        "meta.object-literal.key.js",
+        "meta.object-literal.key.ts"
+      ],
+      "settings": { "foreground": "#98C379" }
+    },
+    {
+      "name": "JS Destructuring",
+      "scope": [
+        "variable.other.destructuring.js",
+        "variable.other.destructuring.ts",
+        "meta.destructuring.js variable",
+        "meta.destructuring.ts variable"
+      ],
+      "settings": { "foreground": "#EDE3D3", "fontStyle": "italic" }
+    },
+
+    /* Класи */
+    {
+      "name": "JS Classes",
+      "scope": [
+        "entity.name.type.class.js",
+        "entity.name.type.class.ts",
+        "entity.name.class.js",
+        "entity.name.class.ts"
+      ],
+      "settings": { "foreground": "#E5C07B", "fontStyle": "bold" }
+    },
+    {
+      "name": "JS Class Members",
+      "scope": [
+        "variable.other.class.property.js",
+        "variable.other.class.property.ts",
+        "meta.class-body.js variable",
+        "meta.class-body.ts variable"
+      ],
+      "settings": { "foreground": "#98C379" }
+    },
+
+    /* TypeScript специфічне */
+    {
+      "name": "TS Type Annotations",
+      "scope": [
+        "meta.type.annotation.ts",
+        "meta.type.parameters.ts",
+        "storage.type.ts"
+      ],
+      "settings": { "foreground": "#56B6C2", "fontStyle": "italic" }
+    },
+    {
+      "name": "TS Type Names",
+      "scope": [
+        "entity.name.type.ts",
+        "support.type.builtin.ts",
+        "support.type.primitive.ts"
+      ],
+      "settings": { "foreground": "#E5C07B" }
+    },
+    {
+      "name": "TS Interface",
+      "scope": ["entity.name.interface.ts", "storage.type.interface.ts"],
+      "settings": { "foreground": "#56B6C2", "fontStyle": "bold" }
+    },
+    {
+      "name": "TS Enum",
+      "scope": ["storage.type.enum.ts", "entity.name.enum.ts"],
+      "settings": { "foreground": "#C678DD", "fontStyle": "bold" }
+    },
+    {
+      "name": "TS Enum Members",
+      "scope": ["variable.other.enummember.ts", "constant.other.enum.ts"],
+      "settings": { "foreground": "#D19A66" }
+    },
+    {
+      "name": "TS Type Parameters",
+      "scope": [
+        "entity.name.type.parameter.ts",
+        "meta.type.parameters.ts entity.name.type"
+      ],
+      "settings": { "foreground": "#56B6C2", "fontStyle": "italic" }
+    },
+    {
+      "name": "TS Generics",
+      "scope": ["meta.generic.ts", "punctuation.definition.generic.ts"],
+      "settings": { "foreground": "#56B6C2" }
+    },
+
+    /* JS спеціальні */
+    {
+      "name": "JS This",
+      "scope": [
+        "variable.language.this.js",
+        "variable.language.this.ts",
+        "variable.language.super.js",
+        "variable.language.super.ts"
+      ],
+      "settings": { "foreground": "#FFB86E", "fontStyle": "bold" }
+    },
+    {
+      "name": "JS Prototype",
+      "scope": [
+        "variable.language.prototype.js",
+        "variable.language.prototype.ts"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "JS Arguments",
+      "scope": [
+        "variable.language.arguments.js",
+        "variable.language.arguments.ts"
+      ],
+      "settings": { "foreground": "#D19A66", "fontStyle": "italic" }
+    },
+
+    /* Бібліотечні об'єкти */
+    {
+      "name": "JS Built-in Objects",
+      "scope": [
+        "support.class.builtin.js",
+        "support.class.builtin.ts",
+        "support.type.object.js",
+        "support.type.object.ts"
+      ],
+      "settings": { "foreground": "#E5C07B" }
+    },
+    {
+      "name": "JS Built-in Methods",
+      "scope": [
+        "support.function.builtin.js",
+        "support.function.builtin.ts",
+        "support.function.array.js",
+        "support.function.array.ts",
+        "support.function.object.js",
+        "support.function.object.ts",
+        "support.function.promise.js",
+        "support.function.promise.ts"
+      ],
+      "settings": { "foreground": "#61AFEF", "fontStyle": "italic" }
+    },
+    {
+      "name": "JS Console/Debug",
+      "scope": [
+        "support.type.console.js",
+        "support.type.console.ts",
+        "entity.name.type.console.js",
+        "entity.name.type.console.ts"
+      ],
       "settings": { "foreground": "#FFB86E" }
     },
     {
-      "name": "GraphQL tegs",
+      "name": "JS DOM APIs",
       "scope": [
-        "entity.name.tag.template.graphql",
-        "punctuation.definition.template.graphql"
+        "support.class.dom.js",
+        "support.class.dom.ts",
+        "support.type.dom.js",
+        "support.type.dom.ts"
       ],
-      "settings": {
-        "foreground": "#C678DD"
-      }
+      "settings": { "foreground": "#56B6C2" }
+    },
+
+    /* JSX/TSX */
+    {
+      "name": "JSX Tags",
+      "scope": ["entity.name.tag.jsx", "entity.name.tag.tsx", "meta.jsx.js"],
+      "settings": { "foreground": "#E06C75" }
+    },
+    {
+      "name": "JSX Components",
+      "scope": [
+        "entity.name.tag.component.jsx",
+        "entity.name.tag.component.tsx",
+        "support.class.component.jsx",
+        "support.class.component.tsx"
+      ],
+      "settings": { "foreground": "#61AFEF", "fontStyle": "bold" }
+    },
+    {
+      "name": "JSX Props",
+      "scope": [
+        "entity.other.attribute-name.jsx",
+        "entity.other.attribute-name.tsx",
+        "variable.parameter.jsx",
+        "variable.parameter.tsx"
+      ],
+      "settings": { "foreground": "#D19A66" }
+    },
+    {
+      "name": "JSX Expressions",
+      "scope": [
+        "meta.embedded.expression.jsx",
+        "meta.embedded.expression.tsx",
+        "punctuation.definition.expression.jsx"
+      ],
+      "settings": { "foreground": "#EDE3D3" }
+    },
+
+    /* Додаткові JS концепти */
+    {
+      "name": "JS Template Strings",
+      "scope": [
+        "string.template.js",
+        "string.template.ts",
+        "meta.template.expression.js",
+        "meta.template.expression.ts"
+      ],
+      "settings": { "foreground": "#98C379" }
+    },
+    {
+      "name": "JS Template Expression",
+      "scope": [
+        "punctuation.definition.template-expression.js",
+        "punctuation.definition.template-expression.ts"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "JS Decorators",
+      "scope": [
+        "meta.decorator.js",
+        "meta.decorator.ts",
+        "punctuation.decorator.js",
+        "punctuation.decorator.ts"
+      ],
+      "settings": { "foreground": "#C678DD", "fontStyle": "bold" }
+    },
+
+    /* JSON */
+    {
+      "name": "JSON Keys",
+      "scope": ["support.type.property-name.json", "entity.name.tag.json"],
+      "settings": { "foreground": "#E06C75" }
+    },
+    {
+      "name": "JSON String Values",
+      "scope": ["string.quoted.double.json"],
+      "settings": { "foreground": "#FFB454" }
+    },
+    {
+      "name": "JSON Numbers",
+      "scope": ["constant.numeric.json"],
+      "settings": { "foreground": "#FFB454" }
+    },
+    {
+      "name": "JSON Booleans & Null",
+      "scope": [
+        "constant.language.boolean.json",
+        "constant.language.null.json"
+      ],
+      "settings": { "foreground": "#FFB454" }
     },
 
     /* Vue.js */
@@ -654,31 +991,6 @@
       }
     },
 
-    /* JSON Key / Value Highlighting */
-    {
-      "name": "JSON Keys",
-      "scope": ["support.type.property-name.json", "entity.name.tag.json"],
-      "settings": { "foreground": "#E06C75" }
-    },
-    {
-      "name": "JSON String Values",
-      "scope": ["string.quoted.double.json"],
-      "settings": { "foreground": "#FFB454" }
-    },
-    {
-      "name": "JSON Numbers",
-      "scope": ["constant.numeric.json"],
-      "settings": { "foreground": "#FFB454" }
-    },
-    {
-      "name": "JSON Booleans & Null",
-      "scope": [
-        "constant.language.boolean.json",
-        "constant.language.null.json"
-      ],
-      "settings": { "foreground": "#FFB454" }
-    },
-
     /* EXTENSIONS */
     {
       "name": "JSON Object Keys Extended",
@@ -702,36 +1014,34 @@
     }
   ],
   "semanticTokenColors": {
-    "variable": "#E8DCCB",
-    "variable.readonly": "#FFB86E",
-    "variable.parameter": "#E8DCCB",
+    "variable": "#EDE3D3",
+    "variable.readonly": "#D19A66",
+    "variable.parameter": "#D19A66",
     "property": "#98C379",
     "property.readonly": "#98C379",
     "function": "#61AFEF",
     "method": "#61AFEF",
     "class": "#E5C07B",
-    "interface": "#E5C07B",
-    "type": "#E5C07B",
-    "enum": "#E5C07B",
+    "interface": "#56B6C2",
+    "type": "#56B6C2",
+    "enum": "#C678DD",
     "enumMember": "#D19A66",
     "namespace": "#E5C07B",
     "keyword": "#D19A66",
     "string": "#98C379",
-    "number": "#D19A66",
-    "boolean": "#D19A66",
+    "number": "#C678DD",
+    "boolean": "#C678DD",
     "comment": "#8B8175",
     "operator": "#56B6C2",
     "decorator": "#C678DD",
     "regexp": "#98C379",
-    "typeParameter": "#E5C07B",
+    "typeParameter": "#56B6C2",
     "event": "#E06C75",
-    "label": "#E8DCCB",
+    "label": "#EDE3D3",
     "macro": "#FFB86E",
     "pseudo": "#56B6C2",
-
-    /* ADDED SAFE SEMANTIC TOKENS */
-    "parameter": "#E8DCCB",
-    "parameter.readonly": "#FFB86E",
+    "parameter": "#D19A66",
+    "parameter.readonly": "#D19A66",
     "selfParameter": "#D19A66",
     "property.static": "#98C379",
     "variable.defaultLibrary": "#61AFEF",
