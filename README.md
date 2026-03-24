@@ -40,11 +40,11 @@ Open an issue or pull request on [GitHub](https://github.com/ovcharovcoder/devfo
 
 <img 
   src="https://raw.githubusercontent.com/ovcharovcoder/devfoundry-umber-theme/main/images/avatar.png"
-  alt="Andriy Ovcharov"
+  alt="Andrii Ovcharov"
   width="60"
 />
 
-Andriy Ovcharov<br>  
+Andrii Ovcharov<br>  
 📧 ovcharovcoder@gmail.com
 
 ---
