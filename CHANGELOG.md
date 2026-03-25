@@ -84,3 +84,21 @@ All notable changes to the DevFoundry Umber VS Code extension will be documented
 ### Fixed
 * This version has refined the color system, improving contrast, strengthening visual hierarchy, and adding depth to the interface. The theme has become more balanced, focused, and noticeably more premium in everyday use.
 
+## [1.1.2] - 2026-03-25
+
+### Improved
+* Refined list and sidebar interaction states (hover, active, focus) to establish clear visual hierarchy and eliminate ambiguity.
+* Improved line highlight contrast for better cursor tracking and readability.
+* Enhanced activity bar and panel indicators for more consistent visual feedback.
+* Fine-tuned input, validation, and panel states for improved UI consistency.
+
+### Changed
+* Simplified semantic token system to reduce conflicts with TextMate scopes and language servers.
+* Reduced semantic token surface to core tokens: variable, parameter, function, method, class, keyword.
+* Adjusted parameter coloring to reduce visual noise and improve balance with keywords.
+* Improved distinction between functions and methods for better code readability.
+
+### Removed
+* Removed excessive semantic token overrides that caused inconsistent behavior across languages.
+* Removed non-essential token definitions (e.g., typeParameter and language-specific semantic overrides).
+
