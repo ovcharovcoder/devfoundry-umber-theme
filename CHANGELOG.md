@@ -11,7 +11,7 @@ All notable changes to the DevFoundry Umber VS Code extension will be documented
 * Accessibility-compliant contrast ratios and subtle translucent selections.
 * Built-in support for error/warning indicators and Git decorations.
 
-## [1.0.1 - 1.0.2] - 2026-02-08
+## [1.0.2] - 2026-02-08
 ### Improved
 
 * Refined overall color consistency to more closely match Chrome DevTools visual language.
